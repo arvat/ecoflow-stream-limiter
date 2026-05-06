@@ -13,20 +13,6 @@ import java.nio.charset.StandardCharsets;
 import java.security.SecureRandom;
 import java.time.Duration;
 
-/**
- * Lists all devices bound to the EcoFlow developer account, printing each
- * device's serial number, product name, and online status.
- * <p>
- * Endpoint: GET /iot-open/sign/device/list
- * <p>
- * Run:
- *   ECOFLOW_ACCESS_KEY=...  \
- *   ECOFLOW_SECRET_KEY=...  \
- *   java -cp ecoflow-set-power-1.0.0.jar com.example.ecoflow.ListDevices
- * <p>
- * Use the {@code sn} of your microinverter as the {@code ECOFLOW_DEVICE_SN}
- * value when calling {@link SetPermanentWatts}.
- */
 public class ListDevices {
 
     private static final String API_HOST = System.getenv()
